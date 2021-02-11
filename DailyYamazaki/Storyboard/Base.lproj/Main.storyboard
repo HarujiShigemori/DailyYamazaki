@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mRN-GJ-0Rj">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ホーム-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="DailyYamazaki" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="ホーム" image="house.fill" catalog="system" id="QBJ-K1-yEN">
+                        <imageReference key="selectedImage" image="house.fill" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1016" y="-648"/>
+        </scene>
+        <!--設定-->
+        <scene sceneID="dn7-tF-egm">
+            <objects>
+                <viewController id="MrQ-6L-XH0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wVP-tM-EsT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dU5-X7-KRq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="設定" image="gearshape" catalog="system" selectedImage="gearshape.fill" id="duo-Hw-cHN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Vb-PA-Kih" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-529" y="864"/>
+        </scene>
+        <!--商品情報-->
+        <scene sceneID="DnW-Kg-mKf">
+            <objects>
+                <viewController id="2KD-SC-PVd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aSb-zN-Yvq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="SWk-J5-ndT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="商品情報" image="bag.fill" catalog="system" selectedImage="bag.fill" id="peb-Dw-maR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EaI-qd-A06" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="274" y="864"/>
+        </scene>
+        <!--おすすめ情報-->
+        <scene sceneID="GgZ-ib-cUK">
+            <objects>
+                <viewController id="oBU-a8-dUw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eCl-io-4We">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="EaC-Hj-1VV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="おすすめ情報" image="star.circle" catalog="system" selectedImage="star.circle" id="J6E-5f-NcP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Cb-lL-iJ9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1016" y="748"/>
+        </scene>
+        <!--クーポン・キャンペーン-->
+        <scene sceneID="PFB-Lu-yYn">
+            <objects>
+                <viewController id="VTH-z3-zyl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lWr-vU-Xj4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="PUF-vG-qFQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="クーポン・キャンペーン" image="aspectratio.fill" catalog="system" selectedImage="aspectratio.fill" id="di6-pa-dVR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4CJ-w7-hpt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1016" y="24"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="PEA-mK-ZXw">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="mRN-GJ-0Rj" customClass="TabBarController" customModule="DailyYamazaki" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6lY-Wu-Y2b">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Vdo-nH-7iA"/>
+                        <segue destination="VTH-z3-zyl" kind="relationship" relationship="viewControllers" id="HxN-UL-JI1"/>
+                        <segue destination="oBU-a8-dUw" kind="relationship" relationship="viewControllers" id="RaJ-mZ-1Tf"/>
+                        <segue destination="2KD-SC-PVd" kind="relationship" relationship="viewControllers" id="JNM-23-aqE"/>
+                        <segue destination="MrQ-6L-XH0" kind="relationship" relationship="viewControllers" id="MGg-Qv-Heu"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FRS-Ig-aUQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105.79710144927537" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="aspectratio.fill" catalog="system" width="128" height="93"/>
+        <image name="bag.fill" catalog="system" width="128" height="128"/>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
+        <image name="gearshape.fill" catalog="system" width="128" height="121"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="star.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
