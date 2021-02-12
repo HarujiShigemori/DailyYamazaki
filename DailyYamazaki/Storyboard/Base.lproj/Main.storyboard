@@ -14,18 +14,68 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="DailyYamazaki" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cx3-KB-wvN">
+                                <rect key="frame" x="0.0" y="44" width="414" height="1073"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4za-7k-Pk7" userLabel="ContentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xZ5-KU-j6m">
+                                                <rect key="frame" x="20" y="0.0" width="374" height="150"/>
+                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="fgI-PZ-Hyu"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t5r-nw-hak">
+                                                <rect key="frame" x="20" y="970" width="374" height="150"/>
+                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="bQd-uB-pgT"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                        <constraints>
+                                            <constraint firstItem="xZ5-KU-j6m" firstAttribute="top" secondItem="4za-7k-Pk7" secondAttribute="top" id="IkC-Gu-dYR"/>
+                                            <constraint firstAttribute="bottom" secondItem="t5r-nw-hak" secondAttribute="bottom" constant="80" id="Jfm-g2-3Aj"/>
+                                            <constraint firstAttribute="trailing" secondItem="t5r-nw-hak" secondAttribute="trailing" constant="20" id="UBL-fd-szj"/>
+                                            <constraint firstItem="t5r-nw-hak" firstAttribute="leading" secondItem="4za-7k-Pk7" secondAttribute="leading" constant="20" id="WkE-mm-5OV"/>
+                                            <constraint firstAttribute="trailing" secondItem="xZ5-KU-j6m" secondAttribute="trailing" constant="20" id="ko6-rR-ZRf"/>
+                                            <constraint firstAttribute="height" constant="1200" id="nUu-w8-o4z"/>
+                                            <constraint firstItem="xZ5-KU-j6m" firstAttribute="leading" secondItem="4za-7k-Pk7" secondAttribute="leading" constant="20" id="ndo-o4-Csa"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="4za-7k-Pk7" secondAttribute="trailing" id="36m-8Y-AnA"/>
+                                    <constraint firstItem="4za-7k-Pk7" firstAttribute="leading" secondItem="Cx3-KB-wvN" secondAttribute="leading" id="JMU-0d-cpK"/>
+                                    <constraint firstAttribute="bottom" secondItem="4za-7k-Pk7" secondAttribute="bottom" id="bbb-Ul-vT5"/>
+                                    <constraint firstItem="4za-7k-Pk7" firstAttribute="top" secondItem="Cx3-KB-wvN" secondAttribute="top" id="cgQ-ZF-rd2"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4za-7k-Pk7" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="BMZ-vQ-sov"/>
+                            <constraint firstItem="Cx3-KB-wvN" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="DVH-fg-XxG"/>
+                            <constraint firstItem="Cx3-KB-wvN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Gsa-Sh-kct"/>
+                            <constraint firstItem="Cx3-KB-wvN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Nhu-FL-1Ut"/>
+                            <constraint firstItem="Cx3-KB-wvN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YTd-PI-jki"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="ホーム" image="house.fill" catalog="system" id="QBJ-K1-yEN">
                         <imageReference key="selectedImage" image="house.fill" catalog="system" symbolScale="large"/>
                     </tabBarItem>
+                    <size key="freeformSize" width="414" height="1200"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1016" y="-648"/>
+            <point key="canvasLocation" x="1015.9420289855074" y="-648.21428571428567"/>
         </scene>
         <!--設定-->
         <scene sceneID="dn7-tF-egm">
@@ -89,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4CJ-w7-hpt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1016" y="24"/>
+            <point key="canvasLocation" x="1887" y="45"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="PEA-mK-ZXw">
@@ -97,6 +147,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="mRN-GJ-0Rj" customClass="TabBarController" customModule="DailyYamazaki" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6lY-Wu-Y2b">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -122,6 +173,12 @@
         <image name="star.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
