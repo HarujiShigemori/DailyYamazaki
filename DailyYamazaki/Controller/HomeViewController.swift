@@ -1,30 +1,35 @@
-//
-//  HomeViewController.swift
-//  DailyYamazaki
-//
-//  Created by 重盛晴二 on 2021/02/11.
-//
 
-//横スクロールの画像の数を変更したい場合はSideViewの
-//AutoLayoutのwidthを変える。
-//imageviewの間20,width360
+//横スクロールの画像を増減させたい場合
+//最初の方のimagesDataの中を変更するだけ
+//Assets.xcassetsの中に画像ファイルを入れとく
 
 import UIKit
 
 class HomeViewController: UIViewController, UIScrollViewDelegate {
     
+    let imagesData = [
+        "ocha2",
+        "hinamaturi",
+        "panmaturi",
+        "ice31",
+        "rakutenPoint"
+    ]
+    
     private let sideScrollView = UIScrollView()
-    private let pageControl: UIPageControl = {
+    let pageControl: UIPageControl = {
         let pageControl = UIPageControl()
-        pageControl.numberOfPages = 5
         pageControl.backgroundColor = .systemYellow
         return pageControl
     }()
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(pageControl)
         view.addSubview(sideScrollView)
+//        ちょっと不安
+        pageControl.numberOfPages = imagesData.count
     }
     
     override func viewDidLayoutSubviews() {
@@ -38,23 +43,16 @@ class HomeViewController: UIViewController, UIScrollViewDelegate {
     
 //    横スクロールの画像表示
     private func configureScrollView() {
-        
-        let imagesData = [
-            "ocha2",
-            "hinamaturi",
-            "panmaturi",
-            "ice31",
-            "rakutenPoint"
-        ]
-        sideScrollView.contentSize = CGSize(width: (view.frame.size.width - 60) * 5, height: sideScrollView.frame.size.height)
+//        イメージの大きさ
+        sideScrollView.contentSize = CGSize(width: (view.frame.size.width - 60) * CGFloat(imagesData.count), height: sideScrollView.frame.size.height)
         sideScrollView.isPagingEnabled = true
-        
-        for x in 0..<5 {
+//        画像の数だけsideScrollViewが横に伸びる
+        for x in 0..<imagesData.count {
             let page = UIImageView(frame: CGRect(x: CGFloat(x) * sideScrollView.frame.size.width, y: 0, width: sideScrollView.frame.size.width, height: sideScrollView.frame.size.height))
+//            stringからimageに変換
             let imageData:UIImage = UIImage(named: imagesData[x])!
-            
             page.image = imageData
-            page.contentMode = .scaleToFill
+//            page.contentMode = .scaleToFill
             sideScrollView.addSubview(page)
         }
     }
