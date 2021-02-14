@@ -5,7 +5,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController, UIScrollViewDelegate {
+class HomeViewController: UIViewController {
     
     let imagesData = [
         "ocha2",
@@ -14,29 +14,48 @@ class HomeViewController: UIViewController, UIScrollViewDelegate {
         "ice31",
         "rakutenPoint"
     ]
+//    scrollViewとpageControlの配置のためのcontentView
+    @IBOutlet weak var contentView: UIView!
+    @IBOutlet weak var verticalScrollView: UIScrollView!
     
     private let sideScrollView = UIScrollView()
+    
     let pageControl: UIPageControl = {
         let pageControl = UIPageControl()
-        pageControl.backgroundColor = .systemYellow
+        
+        UIPageControl.appearance().pageIndicatorTintColor = .rgb(red: 50, green: 50, blue: 50)
+        UIPageControl.appearance().currentPageIndicatorTintColor = .rgb(red: 220, green: 50, blue: 35)
+        
+        pageControl.addTarget(self, action: #selector(pageControlDidChange(_:)), for: .valueChanged)
+        pageControl.isEnabled = false
+        
         return pageControl
     }()
     
+    @objc private func pageControlDidChange(_ sender: UIPageControl) {
+        let current = sender.currentPage
+        sideScrollView.setContentOffset(CGPoint(x: CGFloat(current) * view.frame.size.width - 60, y: 0), animated: true)
+    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(pageControl)
-        view.addSubview(sideScrollView)
-//        ちょっと不安
+//        スクロールのバウンドさせない
+        verticalScrollView.bounces = false
+        sideScrollView.delegate = self
+        
         pageControl.numberOfPages = imagesData.count
+        
+        contentView.addSubview(pageControl)
+        contentView.addSubview(sideScrollView)
+
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
-        pageControl.frame = CGRect(x: 30, y: 300, width: view.frame.size.width - 60, height: 30)
-        sideScrollView.frame = CGRect(x: 30, y: 120, width: view.frame.size.width - 60, height: 150)
+        pageControl.frame = CGRect(x: 30, y: 170, width: view.frame.size.width - 60, height: 30)
+        sideScrollView.frame = CGRect(x: 30, y: 10, width: view.frame.size.width - 60, height: 150)
         configureScrollView()
     }
     
@@ -57,6 +76,12 @@ class HomeViewController: UIViewController, UIScrollViewDelegate {
         }
     }
 
+}
 
+//
+extension HomeViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        pageControl.currentPage = Int(floor(Float(scrollView.contentOffset.x) / Float(scrollView.frame.size.width)))
+    }
 }
 

@@ -109,7 +109,7 @@
                                     <constraint firstAttribute="height" constant="70" id="eoO-5J-8QV"/>
                                 </constraints>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Jf-FG-tcs">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Jf-FG-tcs">
                                 <rect key="frame" x="0.0" y="114" width="414" height="1003"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2dO-k9-5mk" userLabel="ContentView">
@@ -121,6 +121,7 @@
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="下のラベル" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hab-vf-P4s">
                                                 <rect key="frame" x="157" y="1000" width="100" height="100"/>
+                                                <color key="backgroundColor" systemColor="systemPinkColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="1t0-Hj-ItL"/>
                                                     <constraint firstAttribute="width" secondItem="Hab-vf-P4s" secondAttribute="height" multiplier="1:1" id="fEh-iS-TPE"/>
@@ -130,7 +131,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="Hab-vf-P4s" firstAttribute="centerX" secondItem="2dO-k9-5mk" secondAttribute="centerX" id="Cd8-wo-5Gv"/>
                                             <constraint firstAttribute="bottom" secondItem="Hab-vf-P4s" secondAttribute="bottom" constant="100" id="r0B-dP-i9w"/>
@@ -138,6 +139,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="2dO-k9-5mk" secondAttribute="bottom" id="3dc-uQ-jDt"/>
                                     <constraint firstAttribute="trailing" secondItem="2dO-k9-5mk" secondAttribute="trailing" id="E1I-MD-twt"/>
@@ -147,7 +149,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FXA-Uk-P3z"/>
-                        <color key="backgroundColor" red="0.98039215800000001" green="0.066666662690000003" blue="0.031372550870000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="1" green="0.19690688775510204" blue="0.1318558673469388" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="2dO-k9-5mk" firstAttribute="width" secondItem="cVA-pv-daT" secondAttribute="width" id="4Aa-GA-Frh"/>
                             <constraint firstItem="0Jf-FG-tcs" firstAttribute="bottom" secondItem="FXA-Uk-P3z" secondAttribute="bottom" id="OBo-Fj-Wy9"/>
@@ -159,8 +161,14 @@
                             <constraint firstItem="FXA-Uk-P3z" firstAttribute="trailing" secondItem="cPe-rM-CbY" secondAttribute="trailing" id="vLX-2T-uka"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="ホーム" image="house.fill" catalog="system" selectedImage="house.fill" id="727-iQ-NXr"/>
+                    <tabBarItem key="tabBarItem" title="ホーム" image="house.fill" catalog="system" selectedImage="house.fill" id="727-iQ-NXr">
+                        <color key="badgeColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBarItem>
                     <size key="freeformSize" width="414" height="1200"/>
+                    <connections>
+                        <outlet property="contentView" destination="2dO-k9-5mk" id="0FP-Cq-Oel"/>
+                        <outlet property="verticalScrollView" destination="0Jf-FG-tcs" id="ANi-jl-sKq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q80-22-si9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -178,6 +186,9 @@
         <image name="star.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

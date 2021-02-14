@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA99A45425D955E200BC0C5C /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA99A45325D955E200BC0C5C /* Color.swift */; };
 		BAD386DF25D4FF7F00407754 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD386DE25D4FF7F00407754 /* AppDelegate.swift */; };
 		BAD386E125D4FF7F00407754 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD386E025D4FF7F00407754 /* SceneDelegate.swift */; };
 		BAD386E325D4FF7F00407754 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD386E225D4FF7F00407754 /* HomeViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA99A45325D955E200BC0C5C /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		BAD386DB25D4FF7F00407754 /* DailyYamazaki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyYamazaki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD386DE25D4FF7F00407754 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAD386E025D4FF7F00407754 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,9 +80,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA99A45825D955ED00BC0C5C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BA99A45325D955E200BC0C5C /* Color.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		BAD386D225D4FF7F00407754 = {
 			isa = PBXGroup;
 			children = (
+				BA99A45825D955ED00BC0C5C /* Model */,
 				BAD386DD25D4FF7F00407754 /* DailyYamazaki */,
 				BAD386F425D4FF8000407754 /* DailyYamazakiTests */,
 				BAD386FF25D4FF8000407754 /* DailyYamazakiUITests */,
@@ -280,6 +291,7 @@
 				BAD386E325D4FF7F00407754 /* HomeViewController.swift in Sources */,
 				BAD3871B25D50A0500407754 /* TabBarController.swift in Sources */,
 				BAD386DF25D4FF7F00407754 /* AppDelegate.swift in Sources */,
+				BA99A45425D955E200BC0C5C /* Color.swift in Sources */,
 				BAD386E125D4FF7F00407754 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
