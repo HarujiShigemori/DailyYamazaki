@@ -4,23 +4,30 @@
 //Assets.xcassetsの中に画像ファイルを入れとく
 
 import UIKit
+import SDWebImage
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController,GetDataProtocol {
     
-    let imagesData = [
-        "ocha2",
-        "hinamaturi",
-        "panmaturi",
-        "ice31",
-        "rakutenPoint"
-    ]
+    func topImageUrlGetData(dataArray: [String]) {
+        topImageUrlArray = dataArray
+        print(topImageUrlArray)
+        
+        configureScrollView()
+        pageControl.numberOfPages = topImageUrlArray.count
+    }
+    
+    
+    var topImageUrlArray = [String]()
 //    scrollViewとpageControlの配置のためのcontentView
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var verticalScrollView: UIScrollView!
     
+    var homeTopLoadImage = HomeTopLoadImage()
     private let sideScrollView = UIScrollView()
     
+    
     let pageControl: UIPageControl = {
+        
         let pageControl = UIPageControl()
         
         UIPageControl.appearance().pageIndicatorTintColor = .rgb(red: 50, green: 50, blue: 50)
@@ -40,38 +47,47 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        homeTopLoadImage.getDataProtocol = self
 //        スクロールのバウンドさせない
         verticalScrollView.bounces = false
         sideScrollView.delegate = self
-        
-        pageControl.numberOfPages = imagesData.count
         
         contentView.addSubview(pageControl)
         contentView.addSubview(sideScrollView)
 
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        homeTopLoadImage.loadTopImage()
+        
+    }
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        
+
         pageControl.frame = CGRect(x: 30, y: 170, width: view.frame.size.width - 60, height: 30)
         sideScrollView.frame = CGRect(x: 30, y: 10, width: view.frame.size.width - 60, height: 150)
-        configureScrollView()
+        
     }
+    
     
     
 //    横スクロールの画像表示
     private func configureScrollView() {
 //        イメージの大きさ
-        sideScrollView.contentSize = CGSize(width: (view.frame.size.width - 60) * CGFloat(imagesData.count), height: sideScrollView.frame.size.height)
+        sideScrollView.contentSize = CGSize(width: (view.frame.size.width - 60) * CGFloat(topImageUrlArray.count), height: sideScrollView.frame.size.height)
         sideScrollView.isPagingEnabled = true
 //        画像の数だけsideScrollViewが横に伸びる
-        for x in 0..<imagesData.count {
+        for x in 0..<topImageUrlArray.count {
             let page = UIImageView(frame: CGRect(x: CGFloat(x) * sideScrollView.frame.size.width, y: 0, width: sideScrollView.frame.size.width, height: sideScrollView.frame.size.height))
-//            stringからimageに変換
-            let imageData:UIImage = UIImage(named: imagesData[x])!
-            page.image = imageData
-//            page.contentMode = .scaleToFill
+//            urlからimageに変換
+            let imageURL = URL(string: topImageUrlArray[x])
+            page.sd_setImage(with: imageURL)
+
+//            let imageData:UIImage = UIImage(data: topImageUrlArray[x])!
+            page.contentMode = .scaleToFill
             sideScrollView.addSubview(page)
         }
     }
@@ -80,6 +96,7 @@ class HomeViewController: UIViewController {
 
 //
 extension HomeViewController: UIScrollViewDelegate {
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         pageControl.currentPage = Int(floor(Float(scrollView.contentOffset.x) / Float(scrollView.frame.size.width)))
     }
