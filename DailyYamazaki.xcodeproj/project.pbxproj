@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0B626E4FC6695CE54900F135 /* Pods_DailyYamazaki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 536EF4C0617373D3A2874310 /* Pods_DailyYamazaki.framework */; };
-		7314D5EB257DF746983037F7 /* Pods_DailyYamazaki_DailyYamazakiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CF81D0D80888878FF7CFB48 /* Pods_DailyYamazaki_DailyYamazakiUITests.framework */; };
-		970085696EDF1D86EC9AEDAD /* Pods_DailyYamazakiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB224BD2F7E330F456135F73 /* Pods_DailyYamazakiTests.framework */; };
 		BA940B8025E0FDB200DEB3A1 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA940B7E25E0FDB200DEB3A1 /* HomeCollectionViewCell.swift */; };
 		BA940B8125E0FDB200DEB3A1 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA940B7F25E0FDB200DEB3A1 /* HomeCollectionViewCell.xib */; };
 		BAAED59B25DDF65A00FBE46D /* LoadDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAED59A25DDF65A00FBE46D /* LoadDataModel.swift */; };
@@ -22,8 +20,6 @@
 		BAD386E625D4FF7F00407754 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD386E425D4FF7F00407754 /* Main.storyboard */; };
 		BAD386E825D4FF8000407754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAD386E725D4FF8000407754 /* Assets.xcassets */; };
 		BAD386EB25D4FF8000407754 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD386E925D4FF8000407754 /* LaunchScreen.storyboard */; };
-		BAD386F625D4FF8000407754 /* DailyYamazakiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD386F525D4FF8000407754 /* DailyYamazakiTests.swift */; };
-		BAD3870125D4FF8000407754 /* DailyYamazakiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD3870025D4FF8000407754 /* DailyYamazakiUITests.swift */; };
 		BAD3871B25D50A0500407754 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD3871A25D50A0500407754 /* TabBarController.swift */; };
 		BAF66FDA25DAE587008C08DF /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF66FD925DAE587008C08DF /* ColorModel.swift */; };
 /* End PBXBuildFile section */
@@ -46,19 +42,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0FE6B0988AA1779B594665A0 /* Pods-DailyYamazakiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyYamazakiTests.debug.xcconfig"; path = "Target Support Files/Pods-DailyYamazakiTests/Pods-DailyYamazakiTests.debug.xcconfig"; sourceTree = "<group>"; };
-		34D662C9B5B36724227AFF51 /* Pods-DailyYamazaki-DailyYamazakiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyYamazaki-DailyYamazakiUITests.release.xcconfig"; path = "Target Support Files/Pods-DailyYamazaki-DailyYamazakiUITests/Pods-DailyYamazaki-DailyYamazakiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		536EF4C0617373D3A2874310 /* Pods_DailyYamazaki.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyYamazaki.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5CF81D0D80888878FF7CFB48 /* Pods_DailyYamazaki_DailyYamazakiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyYamazaki_DailyYamazakiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B37082E8019503F136D848D /* Pods-DailyYamazaki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyYamazaki.debug.xcconfig"; path = "Target Support Files/Pods-DailyYamazaki/Pods-DailyYamazaki.debug.xcconfig"; sourceTree = "<group>"; };
-		A4D2FBCFF46C78DB2FA8CD1F /* Pods-DailyYamazaki-DailyYamazakiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyYamazaki-DailyYamazakiUITests.debug.xcconfig"; path = "Target Support Files/Pods-DailyYamazaki-DailyYamazakiUITests/Pods-DailyYamazaki-DailyYamazakiUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BA940B7E25E0FDB200DEB3A1 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		BA940B7F25E0FDB200DEB3A1 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		BAAC637B25E1C2A400FD5B4E /* DailyYamazaki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyYamazaki.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAAC637E25E1C39700FD5B4E /* DailyYamazakiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = DailyYamazakiUITests.xctest; path = "/Users/shigemorihareni/Desktop/swift1/オリジナルアプリ/DailyYamazaki/build/Debug-iphoneos/DailyYamazakiUITests.xctest"; sourceTree = "<absolute>"; };
+		BAAC638525E1C39D00FD5B4E /* DailyYamazakiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = DailyYamazakiTests.xctest; path = "/Users/shigemorihareni/Desktop/swift1/オリジナルアプリ/DailyYamazaki/build/Debug-iphoneos/DailyYamazakiTests.xctest"; sourceTree = "<absolute>"; };
 		BAAED59A25DDF65A00FBE46D /* LoadDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadDataModel.swift; sourceTree = "<group>"; };
 		BAAED5F525DE1B4C00FBE46D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BAD0116A25DF973B00624D21 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		BAD0116F25DF9D5500624D21 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
-		BAD386DB25D4FF7F00407754 /* DailyYamazaki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyYamazaki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD386DE25D4FF7F00407754 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAD386E025D4FF7F00407754 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BAD386E225D4FF7F00407754 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -66,17 +60,9 @@
 		BAD386E725D4FF8000407754 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAD386EA25D4FF8000407754 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAD386EC25D4FF8000407754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BAD386F125D4FF8000407754 /* DailyYamazakiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyYamazakiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BAD386F525D4FF8000407754 /* DailyYamazakiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyYamazakiTests.swift; sourceTree = "<group>"; };
-		BAD386F725D4FF8000407754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BAD386FC25D4FF8000407754 /* DailyYamazakiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyYamazakiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BAD3870025D4FF8000407754 /* DailyYamazakiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyYamazakiUITests.swift; sourceTree = "<group>"; };
-		BAD3870225D4FF8000407754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAD3871A25D50A0500407754 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		BAF66FD925DAE587008C08DF /* ColorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
-		CB224BD2F7E330F456135F73 /* Pods_DailyYamazakiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyYamazakiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB539BA04EAF5762173E0010 /* Pods-DailyYamazaki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyYamazaki.release.xcconfig"; path = "Target Support Files/Pods-DailyYamazaki/Pods-DailyYamazaki.release.xcconfig"; sourceTree = "<group>"; };
-		FCBC664B16FABCCF987F06D8 /* Pods-DailyYamazakiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyYamazakiTests.release.xcconfig"; path = "Target Support Files/Pods-DailyYamazakiTests/Pods-DailyYamazakiTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +78,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				970085696EDF1D86EC9AEDAD /* Pods_DailyYamazakiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,7 +85,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7314D5EB257DF746983037F7 /* Pods_DailyYamazaki_DailyYamazakiUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,8 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				536EF4C0617373D3A2874310 /* Pods_DailyYamazaki.framework */,
-				5CF81D0D80888878FF7CFB48 /* Pods_DailyYamazaki_DailyYamazakiUITests.framework */,
-				CB224BD2F7E330F456135F73 /* Pods_DailyYamazakiTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -140,22 +122,10 @@
 			isa = PBXGroup;
 			children = (
 				BAD386DD25D4FF7F00407754 /* DailyYamazaki */,
-				BAD386F425D4FF8000407754 /* DailyYamazakiTests */,
-				BAD386FF25D4FF8000407754 /* DailyYamazakiUITests */,
-				BAD386DC25D4FF7F00407754 /* Products */,
 				FB0CA9B0EFCCE5E039A44423 /* Pods */,
 				8EF94B99C5919F483FF4CF03 /* Frameworks */,
+				BAAC637B25E1C2A400FD5B4E /* DailyYamazaki.app */,
 			);
-			sourceTree = "<group>";
-		};
-		BAD386DC25D4FF7F00407754 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BAD386DB25D4FF7F00407754 /* DailyYamazaki.app */,
-				BAD386F125D4FF8000407754 /* DailyYamazakiTests.xctest */,
-				BAD386FC25D4FF8000407754 /* DailyYamazakiUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		BAD386DD25D4FF7F00407754 /* DailyYamazaki */ = {
@@ -173,24 +143,6 @@
 				BAAED5F525DE1B4C00FBE46D /* GoogleService-Info.plist */,
 			);
 			path = DailyYamazaki;
-			sourceTree = "<group>";
-		};
-		BAD386F425D4FF8000407754 /* DailyYamazakiTests */ = {
-			isa = PBXGroup;
-			children = (
-				BAD386F525D4FF8000407754 /* DailyYamazakiTests.swift */,
-				BAD386F725D4FF8000407754 /* Info.plist */,
-			);
-			path = DailyYamazakiTests;
-			sourceTree = "<group>";
-		};
-		BAD386FF25D4FF8000407754 /* DailyYamazakiUITests */ = {
-			isa = PBXGroup;
-			children = (
-				BAD3870025D4FF8000407754 /* DailyYamazakiUITests.swift */,
-				BAD3870225D4FF8000407754 /* Info.plist */,
-			);
-			path = DailyYamazakiUITests;
 			sourceTree = "<group>";
 		};
 		BAD3871F25D50A6C00407754 /* Controller */ = {
@@ -216,10 +168,6 @@
 			children = (
 				6B37082E8019503F136D848D /* Pods-DailyYamazaki.debug.xcconfig */,
 				CB539BA04EAF5762173E0010 /* Pods-DailyYamazaki.release.xcconfig */,
-				A4D2FBCFF46C78DB2FA8CD1F /* Pods-DailyYamazaki-DailyYamazakiUITests.debug.xcconfig */,
-				34D662C9B5B36724227AFF51 /* Pods-DailyYamazaki-DailyYamazakiUITests.release.xcconfig */,
-				0FE6B0988AA1779B594665A0 /* Pods-DailyYamazakiTests.debug.xcconfig */,
-				FCBC664B16FABCCF987F06D8 /* Pods-DailyYamazakiTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -243,7 +191,7 @@
 			);
 			name = DailyYamazaki;
 			productName = DailyYamazaki;
-			productReference = BAD386DB25D4FF7F00407754 /* DailyYamazaki.app */;
+			productReference = BAAC637B25E1C2A400FD5B4E /* DailyYamazaki.app */;
 			productType = "com.apple.product-type.application";
 		};
 		BAD386F025D4FF8000407754 /* DailyYamazakiTests */ = {
@@ -262,7 +210,7 @@
 			);
 			name = DailyYamazakiTests;
 			productName = DailyYamazakiTests;
-			productReference = BAD386F125D4FF8000407754 /* DailyYamazakiTests.xctest */;
+			productReference = BAAC638525E1C39D00FD5B4E /* DailyYamazakiTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		BAD386FB25D4FF8000407754 /* DailyYamazakiUITests */ = {
@@ -282,7 +230,7 @@
 			);
 			name = DailyYamazakiUITests;
 			productName = DailyYamazakiUITests;
-			productReference = BAD386FC25D4FF8000407754 /* DailyYamazakiUITests.xctest */;
+			productReference = BAAC637E25E1C39700FD5B4E /* DailyYamazakiUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -316,7 +264,7 @@
 				Base,
 			);
 			mainGroup = BAD386D225D4FF7F00407754;
-			productRefGroup = BAD386DC25D4FF7F00407754 /* Products */;
+			productRefGroup = BAD386D225D4FF7F00407754;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -480,7 +428,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAD386F625D4FF8000407754 /* DailyYamazakiTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,7 +435,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAD3870125D4FF8000407754 /* DailyYamazakiUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,7 +631,6 @@
 		};
 		BAD3870925D4FF8000407754 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0FE6B0988AA1779B594665A0 /* Pods-DailyYamazakiTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -708,7 +653,6 @@
 		};
 		BAD3870A25D4FF8000407754 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FCBC664B16FABCCF987F06D8 /* Pods-DailyYamazakiTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -731,7 +675,6 @@
 		};
 		BAD3870C25D4FF8000407754 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4D2FBCFF46C78DB2FA8CD1F /* Pods-DailyYamazaki-DailyYamazakiUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -752,7 +695,6 @@
 		};
 		BAD3870D25D4FF8000407754 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34D662C9B5B36724227AFF51 /* Pods-DailyYamazaki-DailyYamazakiUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
