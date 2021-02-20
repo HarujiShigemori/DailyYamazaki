@@ -8,19 +8,23 @@ import SDWebImage
 
 class HomeViewController: UIViewController,GetDataProtocol {
     
+    var topImageUrlArray = [String]()
+    
+//    別のファイルから配列の情報を持ってくる
     func topImageUrlGetData(dataArray: [String]) {
         topImageUrlArray = dataArray
-        print(topImageUrlArray)
-        
+//        配列の個数が決まったので、scrollViewの表示を決めるメソッド実行
         configureScrollView()
+//        pageControlの丸の数
         pageControl.numberOfPages = topImageUrlArray.count
+        
     }
     
-    
-    var topImageUrlArray = [String]()
 //    scrollViewとpageControlの配置のためのcontentView
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var verticalScrollView: UIScrollView!
+    @IBOutlet weak var homeCollectionView: UICollectionView!
+    
     
     var homeTopLoadImage = HomeTopLoadImage()
     private let sideScrollView = UIScrollView()
@@ -45,6 +49,7 @@ class HomeViewController: UIViewController,GetDataProtocol {
     }
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -55,7 +60,14 @@ class HomeViewController: UIViewController,GetDataProtocol {
         
         contentView.addSubview(pageControl)
         contentView.addSubview(sideScrollView)
+        
+        homeCollectionView.delegate = self
+        homeCollectionView.dataSource = self
+        homeCollectionView.register(HomeCollectionViewCell.nib(), forCellWithReuseIdentifier: HomeCollectionViewCell.identifier)
 
+        homeCollectionLayout()
+
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -71,8 +83,6 @@ class HomeViewController: UIViewController,GetDataProtocol {
         sideScrollView.frame = CGRect(x: 30, y: 10, width: view.frame.size.width - 60, height: 150)
         
     }
-    
-    
     
 //    横スクロールの画像表示
     private func configureScrollView() {
@@ -101,4 +111,52 @@ extension HomeViewController: UIScrollViewDelegate {
         pageControl.currentPage = Int(floor(Float(scrollView.contentOffset.x) / Float(scrollView.frame.size.width)))
     }
 }
+
+extension HomeViewController: UICollectionViewDelegate{
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        homeCollectionView.deselectItem(at: indexPath, animated: true)
+        
+        print("tapped")
+    }
+}
+
+extension HomeViewController: UICollectionViewDataSource{
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = homeCollectionView.dequeueReusableCell(withReuseIdentifier: HomeCollectionViewCell.identifier, for: indexPath) as! HomeCollectionViewCell
+        
+        cell.configure(with: UIImage(named: "ice31")!)
+        
+        return cell
+    }
+    
+    
+}
+
+extension HomeViewController: UICollectionViewDelegateFlowLayout{
+    
+
+    func homeCollectionLayout() {
+        let layout = UICollectionViewFlowLayout()
+        //        行間
+        layout.minimumLineSpacing = 15
+        //        セクションの余白（labelからの長さ）
+        layout.sectionInset = UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0)
+        homeCollectionView.collectionViewLayout = layout
+        //        スクロールさせない
+        homeCollectionView.isScrollEnabled = false
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+
+        
+        return CGSize(width: homeCollectionView.frame.width / 3 * 1.4, height: homeCollectionView.frame.height / 6)
+    }
+}
+
 

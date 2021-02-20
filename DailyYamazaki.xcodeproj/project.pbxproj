@@ -10,9 +10,12 @@
 		0B626E4FC6695CE54900F135 /* Pods_DailyYamazaki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 536EF4C0617373D3A2874310 /* Pods_DailyYamazaki.framework */; };
 		7314D5EB257DF746983037F7 /* Pods_DailyYamazaki_DailyYamazakiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CF81D0D80888878FF7CFB48 /* Pods_DailyYamazaki_DailyYamazakiUITests.framework */; };
 		970085696EDF1D86EC9AEDAD /* Pods_DailyYamazakiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB224BD2F7E330F456135F73 /* Pods_DailyYamazakiTests.framework */; };
+		BA940B8025E0FDB200DEB3A1 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA940B7E25E0FDB200DEB3A1 /* HomeCollectionViewCell.swift */; };
+		BA940B8125E0FDB200DEB3A1 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA940B7F25E0FDB200DEB3A1 /* HomeCollectionViewCell.xib */; };
 		BAAED59B25DDF65A00FBE46D /* LoadDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAED59A25DDF65A00FBE46D /* LoadDataModel.swift */; };
-		BAAED5D425DDFEFC00FBE46D /* PersonalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAED5D325DDFEFC00FBE46D /* PersonalData.swift */; };
 		BAAED5F625DE1B4C00FBE46D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAAED5F525DE1B4C00FBE46D /* GoogleService-Info.plist */; };
+		BAD0116B25DF973B00624D21 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0116A25DF973B00624D21 /* TestViewController.swift */; };
+		BAD0117025DF9D5500624D21 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0116F25DF9D5500624D21 /* Test.swift */; };
 		BAD386DF25D4FF7F00407754 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD386DE25D4FF7F00407754 /* AppDelegate.swift */; };
 		BAD386E125D4FF7F00407754 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD386E025D4FF7F00407754 /* SceneDelegate.swift */; };
 		BAD386E325D4FF7F00407754 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD386E225D4FF7F00407754 /* HomeViewController.swift */; };
@@ -49,9 +52,12 @@
 		5CF81D0D80888878FF7CFB48 /* Pods_DailyYamazaki_DailyYamazakiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyYamazaki_DailyYamazakiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B37082E8019503F136D848D /* Pods-DailyYamazaki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyYamazaki.debug.xcconfig"; path = "Target Support Files/Pods-DailyYamazaki/Pods-DailyYamazaki.debug.xcconfig"; sourceTree = "<group>"; };
 		A4D2FBCFF46C78DB2FA8CD1F /* Pods-DailyYamazaki-DailyYamazakiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyYamazaki-DailyYamazakiUITests.debug.xcconfig"; path = "Target Support Files/Pods-DailyYamazaki-DailyYamazakiUITests/Pods-DailyYamazaki-DailyYamazakiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BA940B7E25E0FDB200DEB3A1 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		BA940B7F25E0FDB200DEB3A1 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		BAAED59A25DDF65A00FBE46D /* LoadDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadDataModel.swift; sourceTree = "<group>"; };
-		BAAED5D325DDFEFC00FBE46D /* PersonalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalData.swift; sourceTree = "<group>"; };
 		BAAED5F525DE1B4C00FBE46D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BAD0116A25DF973B00624D21 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		BAD0116F25DF9D5500624D21 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		BAD386DB25D4FF7F00407754 /* DailyYamazaki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyYamazaki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD386DE25D4FF7F00407754 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAD386E025D4FF7F00407754 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,12 +117,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BA940B4A25E07FFA00DEB3A1 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				BA940B7E25E0FDB200DEB3A1 /* HomeCollectionViewCell.swift */,
+				BA940B7F25E0FDB200DEB3A1 /* HomeCollectionViewCell.xib */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
 		BA99A45825D955ED00BC0C5C /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				BAF66FD925DAE587008C08DF /* ColorModel.swift */,
 				BAAED59A25DDF65A00FBE46D /* LoadDataModel.swift */,
-				BAAED5D325DDFEFC00FBE46D /* PersonalData.swift */,
+				BAD0116F25DF9D5500624D21 /* Test.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -146,6 +161,7 @@
 		BAD386DD25D4FF7F00407754 /* DailyYamazaki */ = {
 			isa = PBXGroup;
 			children = (
+				BA940B4A25E07FFA00DEB3A1 /* CustomCell */,
 				BA99A45825D955ED00BC0C5C /* Model */,
 				BAD386DE25D4FF7F00407754 /* AppDelegate.swift */,
 				BAD386E025D4FF7F00407754 /* SceneDelegate.swift */,
@@ -182,6 +198,7 @@
 			children = (
 				BAD3871A25D50A0500407754 /* TabBarController.swift */,
 				BAD386E225D4FF7F00407754 /* HomeViewController.swift */,
+				BAD0116A25DF973B00624D21 /* TestViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -315,6 +332,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA940B8125E0FDB200DEB3A1 /* HomeCollectionViewCell.xib in Resources */,
 				BAD386EB25D4FF8000407754 /* LaunchScreen.storyboard in Resources */,
 				BAD386E825D4FF8000407754 /* Assets.xcassets in Resources */,
 				BAAED5F625DE1B4C00FBE46D /* GoogleService-Info.plist in Resources */,
@@ -448,10 +466,12 @@
 			files = (
 				BAD386E325D4FF7F00407754 /* HomeViewController.swift in Sources */,
 				BAD3871B25D50A0500407754 /* TabBarController.swift in Sources */,
+				BAD0117025DF9D5500624D21 /* Test.swift in Sources */,
+				BAD0116B25DF973B00624D21 /* TestViewController.swift in Sources */,
 				BAD386DF25D4FF7F00407754 /* AppDelegate.swift in Sources */,
+				BA940B8025E0FDB200DEB3A1 /* HomeCollectionViewCell.swift in Sources */,
 				BAD386E125D4FF7F00407754 /* SceneDelegate.swift in Sources */,
 				BAF66FDA25DAE587008C08DF /* ColorModel.swift in Sources */,
-				BAAED5D425DDFEFC00FBE46D /* PersonalData.swift in Sources */,
 				BAAED59B25DDF65A00FBE46D /* LoadDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

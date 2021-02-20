@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -119,23 +120,48 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="159"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="下のラベル" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hab-vf-P4s">
-                                                <rect key="frame" x="157" y="1000" width="100" height="100"/>
-                                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Kaa-6H-u6M">
+                                                <rect key="frame" x="20" y="285" width="374" height="880"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="100" id="1t0-Hj-ItL"/>
-                                                    <constraint firstAttribute="width" secondItem="Hab-vf-P4s" secondAttribute="height" multiplier="1:1" id="fEh-iS-TPE"/>
+                                                    <constraint firstAttribute="height" constant="880" id="BL3-lo-wj6"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xZU-Ag-CU0">
+                                                    <size key="itemSize" width="128" height="128"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCell" id="Zp7-OE-qyY">
+                                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ys8-gc-ORp">
+                                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </collectionViewCellContentView>
+                                                    </collectionViewCell>
+                                                </cells>
+                                            </collectionView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ピックアップ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T5b-af-e9e">
+                                                <rect key="frame" x="20" y="245" width="125" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="125" id="FP4-V0-uHn"/>
+                                                    <constraint firstAttribute="height" constant="25" id="uC6-Iz-rF1"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="Hab-vf-P4s" firstAttribute="centerX" secondItem="2dO-k9-5mk" secondAttribute="centerX" id="Cd8-wo-5Gv"/>
-                                            <constraint firstAttribute="bottom" secondItem="Hab-vf-P4s" secondAttribute="bottom" constant="100" id="r0B-dP-i9w"/>
+                                            <constraint firstItem="Kaa-6H-u6M" firstAttribute="top" secondItem="T5b-af-e9e" secondAttribute="bottom" constant="15" id="8Em-Tn-zPq"/>
+                                            <constraint firstItem="T5b-af-e9e" firstAttribute="leading" secondItem="Kaa-6H-u6M" secondAttribute="leading" id="9ZF-QX-e5v"/>
+                                            <constraint firstItem="Kaa-6H-u6M" firstAttribute="leading" secondItem="2dO-k9-5mk" secondAttribute="leading" constant="20" id="Ayd-tp-sqI"/>
+                                            <constraint firstAttribute="bottom" secondItem="Kaa-6H-u6M" secondAttribute="bottom" constant="35" id="Ehk-6e-Vyn"/>
                                             <constraint firstAttribute="height" constant="1200" id="tqq-5h-iJA"/>
+                                            <constraint firstAttribute="trailing" secondItem="Kaa-6H-u6M" secondAttribute="trailing" constant="20" id="zyx-xg-Jp5"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -167,6 +193,7 @@
                     <size key="freeformSize" width="414" height="1200"/>
                     <connections>
                         <outlet property="contentView" destination="2dO-k9-5mk" id="0FP-Cq-Oel"/>
+                        <outlet property="homeCollectionView" destination="Kaa-6H-u6M" id="M23-8J-h7Z"/>
                         <outlet property="verticalScrollView" destination="0Jf-FG-tcs" id="ANi-jl-sKq"/>
                     </connections>
                 </viewController>
@@ -186,9 +213,6 @@
         <image name="star.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
