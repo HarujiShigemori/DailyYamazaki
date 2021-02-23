@@ -6,11 +6,11 @@
 //
 
 import UIKit
+import SDWebImage
 
 class HomeCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet var imageView: UIImageView!
-
     @IBOutlet weak var label: UILabel!
     
     static let identifier = "HomeCollectionViewCell"
@@ -20,12 +20,14 @@ class HomeCollectionViewCell: UICollectionViewCell {
         
     }
 
-    public func configure(with image: UIImage) {
-        imageView.image = image
+    public func configure(with imageStr: String, text: String) {
+//        urlからimageに変える
+        let imageURL = URL(string: imageStr)
+        
+        imageView.sd_setImage(with: imageURL)
         imageView.contentMode = .scaleToFill
         
-        label.text = "aa"
-        
+        label.text = text
     }
     
     static func nib() -> UINib {

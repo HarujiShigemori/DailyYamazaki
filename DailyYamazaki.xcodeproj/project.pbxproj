@@ -44,11 +44,11 @@
 /* Begin PBXFileReference section */
 		536EF4C0617373D3A2874310 /* Pods_DailyYamazaki.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyYamazaki.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B37082E8019503F136D848D /* Pods-DailyYamazaki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyYamazaki.debug.xcconfig"; path = "Target Support Files/Pods-DailyYamazaki/Pods-DailyYamazaki.debug.xcconfig"; sourceTree = "<group>"; };
+		BA00A4C725E3B4DD008E6F50 /* DailyYamazakiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyYamazakiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA00A4C825E3B4DD008E6F50 /* DailyYamazakiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyYamazakiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA940B7E25E0FDB200DEB3A1 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		BA940B7F25E0FDB200DEB3A1 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		BAAC637B25E1C2A400FD5B4E /* DailyYamazaki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyYamazaki.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BAAC637E25E1C39700FD5B4E /* DailyYamazakiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = DailyYamazakiUITests.xctest; path = "/Users/shigemorihareni/Desktop/swift1/オリジナルアプリ/DailyYamazaki/build/Debug-iphoneos/DailyYamazakiUITests.xctest"; sourceTree = "<absolute>"; };
-		BAAC638525E1C39D00FD5B4E /* DailyYamazakiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = DailyYamazakiTests.xctest; path = "/Users/shigemorihareni/Desktop/swift1/オリジナルアプリ/DailyYamazaki/build/Debug-iphoneos/DailyYamazakiTests.xctest"; sourceTree = "<absolute>"; };
 		BAAED59A25DDF65A00FBE46D /* LoadDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadDataModel.swift; sourceTree = "<group>"; };
 		BAAED5F525DE1B4C00FBE46D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BAD0116A25DF973B00624D21 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +125,8 @@
 				FB0CA9B0EFCCE5E039A44423 /* Pods */,
 				8EF94B99C5919F483FF4CF03 /* Frameworks */,
 				BAAC637B25E1C2A400FD5B4E /* DailyYamazaki.app */,
+				BA00A4C725E3B4DD008E6F50 /* DailyYamazakiTests.xctest */,
+				BA00A4C825E3B4DD008E6F50 /* DailyYamazakiUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -210,7 +212,7 @@
 			);
 			name = DailyYamazakiTests;
 			productName = DailyYamazakiTests;
-			productReference = BAAC638525E1C39D00FD5B4E /* DailyYamazakiTests.xctest */;
+			productReference = BA00A4C725E3B4DD008E6F50 /* DailyYamazakiTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		BAD386FB25D4FF8000407754 /* DailyYamazakiUITests */ = {
@@ -230,7 +232,7 @@
 			);
 			name = DailyYamazakiUITests;
 			productName = DailyYamazakiUITests;
-			productReference = BAAC637E25E1C39700FD5B4E /* DailyYamazakiUITests.xctest */;
+			productReference = BA00A4C825E3B4DD008E6F50 /* DailyYamazakiUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -598,6 +600,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X7K464LF72;
 				INFOPLIST_FILE = DailyYamazaki/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -605,7 +608,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.shige.DailyYamazaki;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -618,6 +621,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X7K464LF72;
 				INFOPLIST_FILE = DailyYamazaki/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -625,7 +629,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.shige.DailyYamazaki;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
